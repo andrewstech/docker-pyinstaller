@@ -1,6 +1,7 @@
 FROM ubuntu:12.04
 SHELL ["/bin/bash", "-i", "-c"]
 
+
 ARG PYTHON_VERSION=3.7.5
 ARG PYINSTALLER_VERSION=3.6
 
@@ -31,6 +32,11 @@ RUN \
         libgdbm-dev \
         libgdbm3 \
         uuid-dev \
+        libressl-dev \
+        postgresql-dev \
+        gcc \
+        musl-dev \
+        python3-dev \
         #upx
         upx \
     # required because openSSL on Ubuntu 12.04 and 14.04 run out of support versions of OpenSSL
