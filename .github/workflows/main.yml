@@ -1,8 +1,9 @@
 name: docker
 
 on:
-  release:
-    type: [published]
+  push:
+    branches:
+      - 'master'
 
 jobs:
   docker:
